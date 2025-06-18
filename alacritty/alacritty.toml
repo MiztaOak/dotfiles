@@ -23,4 +23,4 @@ y = 5
 [general]
 
 live_config_reload = true
-import = ["colors/rootloops.toml"]
+import = ["colors/tokyonight_storm.toml"]
