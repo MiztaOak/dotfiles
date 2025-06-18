@@ -19,5 +19,10 @@ stow vim
 stow tmux
 ```
 
+### Installation on windows
+```
+mklink /D %APPDATA%\alacritty <PATH_TO_DOTFILES>\alacritty
+```
+
 ## Color theme
 I currently use the following [Rootloops theme](https://rootloops.sh/?sugar=8&colors=9&sogginess=4&flavor=0&fruit=9&milk=1)
