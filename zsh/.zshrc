@@ -103,5 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# user 256 color terminal
+export TERM=xterm-256color
+
 #Enable starship
 eval "$(starship init zsh)"
