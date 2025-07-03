@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ngUtvLocal="ng serve --configuration utv-local"
 
 # user 256 color terminal
 export TERM=xterm-256color
