@@ -3,8 +3,7 @@
   "logo": {
     "type": "auto",
     "source": "~/.config/fastfetch/endevouros.png",
-    "height": 15,
-    "width": 30,
+    "height": 14,
     "padding": {
       "top": 1
     }
@@ -31,68 +30,58 @@
     "break",
     {
       "key": "OS           ",
-      "keyColor": "red",
+      "keyColor": "#f5c2e7",
       "type": "os"
     },
     {
-      "key": "Machine      ",
-      "keyColor": "green",
-      "type": "host"
-    },
-    {
       "key": "Kernel       ",
-      "keyColor": "magenta",
+      "keyColor": "#cba6f7",
       "type": "kernel"
     },
     {
       "key": "Uptime       ",
-      "keyColor": "red",
+      "keyColor": "#eba0ac",
       "type": "uptime"
     },
     {
       "key": "Packages     ",
-      "keyColor": "yellow",
+      "keyColor": "#fab387",
       "type": "packages"
     },
     {
-      "key": "Resolution   ",
-      "keyColor": "blue",
-      "type": "display",
-      "compactType": "original-with-refresh-rate"
-    },
-    {
       "key": "WM           ",
-      "keyColor": "green",
+      "keyColor": "#f9e2af",
       "type": "wm"
     },
     {
       "key": "DE           ",
-      "keyColor": "cyan",
+      "keyColor": "#f9e2af",
       "type": "de"
     },
     {
       "key": "Shell        ",
-      "keyColor": "red",
+      "keyColor": "#a6e3a1",
       "type": "shell"
     },
     {
       "key": "Terminal     ",
-      "keyColor": "yellow",
+      "keyColor": "#94e2d5",
       "type": "terminal"
     },
     {
       "key": "CPU          ",
-      "keyColor": "blue",
+      "keyColor": "#89dceb",
       "type": "cpu"
     },
     {
       "key": "GPU          ",
-      "keyColor": "magenta",
-      "type": "gpu"
+      "keyColor": "#74c7ec",
+      "type": "gpu",
+      "hideType": "integrated"
     },
     {
       "key": "Memory       ",
-      "keyColor": "red",
+      "keyColor": "#b4befe",
       "type": "memory"
     },
     "break",
