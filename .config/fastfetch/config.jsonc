@@ -77,7 +77,8 @@
       "key": "GPU          ",
       "keyColor": "#74c7ec",
       "type": "gpu",
-      "hideType": "integrated"
+      "hideType": "integrated",
+      "format": "{vendor} {name}"
     },
     {
       "key": "Memory       ",
