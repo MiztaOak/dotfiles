@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "niri msg action quit --skip-confirmation",
+    "action" : "hyprctl dispatch exit",
     "text" : "Logout",
     "keybind" : "e"
 }

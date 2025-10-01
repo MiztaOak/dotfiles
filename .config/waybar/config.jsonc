@@ -23,12 +23,16 @@
   ],
   // Modules
   "hyprland/workspaces": {
-    "all-outputs": false,
+    "all-outputs": true,
     "disable-click": false,
     "format": "{icon}",
     "format-icons": {
       "active": "󰝥",
       "default": "󰝦"
+    },
+    "persistent-only": true,
+    "persistent-workspaces": {
+      "*": 5
     }
   },
   "mpd": {
