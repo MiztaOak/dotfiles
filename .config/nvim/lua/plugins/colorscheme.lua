@@ -1,17 +1,17 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
     opts = {
-      flavour = "mocha",
-      transparent_background = true,
+      -- flavour = "mocha",
+      transparent_mode = true,
     },
   },
   -- Configure LazyVim to catppuccin
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
     },
   },
 }
