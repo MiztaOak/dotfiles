@@ -12,9 +12,8 @@ set $right l
 # Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
-set $menu wmenu-run -i -f 'JetBrainsMono nerd Font 12' -l 10 -p 'Run' -S 282828 -s d79921 -N 504945E6 -n ebdbb2 -M d79921 -m 282828
+set $menu sh ~/scripts/wmenu.sh
 
-        #focused_workspace #ebdbb2 #ebdbb2 #282828
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
