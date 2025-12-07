@@ -22,45 +22,21 @@ wireless wlan0 {
         format_down = "W: down"
 }
 
-ethernet eth0 {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
-}
-
 battery 0 {
-        format = "%status %percentage %remaining %emptytime"
+        format = "%status %percentage %emptytime"
         format_down = "No battery"
-        status_chr = "⚡ CHR"
-        status_bat = "🔋 BAT"
-        status_unk = "? UNK"
-        status_full = "☻ FULL"
-        status_idle = "☻ IDLE"
+        status_chr = "⚡"
+        status_bat = "🔋"
+        status_unk = "?"
+        status_full = "☻"
+        status_idle = "☻"
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
-}
-
-run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
-}
-
-run_watch VPNC {
-        # file containing the PID of a vpnc process
-        pidfile = "/var/run/vpnc/pid"
-}
-
-path_exists VPN {
-        # path exists when a VPN tunnel launched by nmcli/nm-applet is active
-        path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
         hide_if_equals_localtime = false
-}
-
-tztime berlin {
-        format = "%Y-%m-%d %H:%M:%S %Z"
-        timezone = "Europe/Berlin"
 }
 
 load {
