@@ -1,0 +1,103 @@
+@import "gruvbox.css";
+* {
+  font-family: Jetbrains Mono Nerd Font, sans-serif;
+  min-height: 0;
+}
+
+window#waybar {
+  font-size: 14px;
+  background-color: @waybar;
+  transition-property: all;
+  transition-duration: .5s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+
+/* Left modules */
+
+.modules-left{
+  color: @text-main;
+}
+
+#workspaces{
+}
+
+#cpu{
+}
+
+#workspaces button {
+  font-size: 14px;
+  padding: 5px 5px;
+  color: @fg0;
+  border-radius:0;
+  outline:none;
+  border:none;
+  background-color: @workspaces-bg;
+  /* border-bottom: 5px solid @workspaces-bg; */
+  margin-right: 3px;
+}
+
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  color:@workspaces-hover; 
+  background: @workspaces-bg;
+}
+
+#workspaces button.focused {
+  color: @workspaces-active;
+  background-color: @workspaces-full;
+  /* border-bottom: 5px solid @workspaces-active */
+}
+
+#workspaces button.visible {
+  color: @workspaces-active;
+}
+
+#workspaces button.empty {
+  background-color: @workspaces-empty;
+  color: @fg;
+  /* border-bottom: 5px solid @workspaces-empty; */
+}
+
+#workspaces button.empty.focused {
+  background-color: @workspaces-full;
+  color: @workspaces-active;
+  /* border-bottom: 5px solid @workspaces-active */
+}
+
+#workspaces button.urgent {
+  color: @alert;
+}
+
+/* Center Modules */
+
+.modules-center{
+  color: @text-main;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#cava {
+  color: @cava;
+}
+
+/* Right modules */
+.modules-right{
+  color: @text-main;
+  padding-right:10px;
+}
+
+#network{
+  margin-left: -10px;
+  padding: 10px;
+}
+
+#wireplumber.muted {
+  color: @mute;
+}

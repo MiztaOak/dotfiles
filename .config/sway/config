@@ -17,7 +17,7 @@ set $menu sh ~/scripts/wmenu.sh
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/goaty/wallpapers/initial-d-trueno-anime-police-girl-8k-eg.jpg fill
+output * bg /home/goaty/wallpapers/1758617040657447.jpg fill
 #
 # Example configuration:
 #
@@ -37,6 +37,11 @@ output * bg /home/goaty/wallpapers/initial-d-trueno-anime-police-girl-8k-eg.jpg 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+#
+# Startup apps
+#
+exec waybar
 
 ### Input configuration
 #
@@ -75,6 +80,8 @@ output * bg /home/goaty/wallpapers/initial-d-trueno-anime-police-girl-8k-eg.jpg 
 
     # Open btop
     bindsym $mod+Escape exec foot btop
+
+    bindsym $mod+Shift+g exec swayimg --gallery ~/Pictures/h/
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -218,34 +225,34 @@ bindsym $mod+r mode "resize"
 # Style Chnages
 #
     font pango:JetBrainsMono Nerd Font Mono,Font Awesome 10
-    client.focused #504945 #3c3836 #ebdbb2 #d79921 #ebdbb2
-    client.unfocused #504945 #504945 #ebdbb2
+    client.focused #504945 #3c3836 #c9b890 #d79921 #c9b890
+    client.unfocused #504945 #504945 #c9b890
 
     #default_border normal 3
     default_border pixel 3
 
-    gaps outer 5
-    gaps inner 10
+    # gaps outer 5
+    # gaps inner 10
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    status_command i3status
-
-    font pango: JetBrainsMono Nerd Font Mono,Font Awesome 12
-
-    colors {
-        statusline #ebdbb2
-        background #282828
-        focused_workspace #ebdbb2 #ebdbb2 #282828
-        inactive_workspace #504945 #504945 #ebdbb2
-    }
-}
+# bar {
+#     position top
+#
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#     status_command i3status
+#
+#     font pango: JetBrainsMono Nerd Font Mono,Font Awesome 12
+#
+#     colors {
+#         statusline #c9b890
+#         background #282828
+#         focused_workspace #c9b890 #c9b890 #282828
+#         inactive_workspace #504945 #504945 #c9b890
+#     }
+# }
 
 include /etc/sway/config.d/*
