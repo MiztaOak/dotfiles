@@ -17,7 +17,7 @@ set $menu sh ~/scripts/wmenu.sh
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/goaty/wallpapers/1758617040657447.jpg fill
+output * bg /home/goaty/wallpapers/girl-2.png fill
 #
 # Example configuration:
 #
@@ -225,8 +225,10 @@ bindsym $mod+r mode "resize"
 # Style Chnages
 #
     font pango:JetBrainsMono Nerd Font Mono,Font Awesome 10
-    client.focused #504945 #3c3836 #c9b890 #d79921 #c9b890
-    client.unfocused #504945 #504945 #c9b890
+    # client.<class> <border> <background> <text> [<indicator> [<child_border>]]
+    client.focused #d5c4a1 #fbf1c7 #3c3836 #d79921 #665c54
+    client.unfocused #d5c4a1 #fbf1c7 #3c3836 #d79921 #d5c4a1
+    client.focused_inactive #d5c4a1 #fbf1c7 #3c3836 #d79921 #d5c4a1
 
     #default_border normal 3
     default_border pixel 3

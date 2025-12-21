@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-  font-size: 14px;
+  font-size: 12px;
   background-color: @waybar;
   transition-property: all;
   transition-duration: .5s;
@@ -39,7 +39,7 @@ window#waybar.hidden {
   border:none;
   background-color: @workspaces-bg;
   /* border-bottom: 5px solid @workspaces-bg; */
-  margin-right: 3px;
+  /* margin-right: 3px; */
 }
 
 #workspaces button:hover {
@@ -57,6 +57,7 @@ window#waybar.hidden {
 
 #workspaces button.visible {
   color: @workspaces-active;
+  background-color: @workspaces-full;
 }
 
 #workspaces button.empty {
@@ -94,8 +95,7 @@ window#waybar.hidden {
 }
 
 #network{
-  margin-left: -10px;
-  padding: 10px;
+  padding-right: 5px;
 }
 
 #wireplumber.muted {
