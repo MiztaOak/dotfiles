@@ -1,3 +1,6 @@
+[terminal]
+shell = "fish"
+
 [font]
 size = 12.0
 
@@ -20,8 +23,8 @@ y = 5
 [window]
 opacity = 0.95
 decorations = "None"
+decorations_theme_variant = "Light"
 
 [general]
-
 live_config_reload = true
-import = ["colors/catppuccin-mocha.toml"]
+import = ["./colors/gruvbox_light.toml"]
