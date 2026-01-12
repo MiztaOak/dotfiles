@@ -12,12 +12,16 @@ set $right l
 # Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
-set $menu sh ~/scripts/wmenu.sh
+# set $menu sh ~/scripts/wmenu.sh
+set $menu qs -c noctalia-shell ipc call launcher toggle
+# set $logutmenu wlogout
+set $logutmenu qs -c noctalia-shell ipc call sessionMenu toggle
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/goaty/wallpapers/girl-2.png fill
+output * 
+#bg /home/goaty/wallpapers/girl-2.png fill
 #
 # Example configuration:
 #
@@ -41,7 +45,8 @@ output * bg /home/goaty/wallpapers/girl-2.png fill
 #
 # Startup apps
 #
-exec waybar
+# exec waybar
+exec qs -c noctalia-shell
 
 ### Input configuration
 #
@@ -78,10 +83,13 @@ exec waybar
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Start session menu
+    bindsym Ctrl+Alt+Backspace exec $logutmenu
+
     # Open btop
     bindsym $mod+Escape exec foot btop
 
-    bindsym $mod+Shift+g exec swayimg --gallery ~/Pictures/h/
+    # bindsym $mod+Shift+g exec swayimg --gallery ~/Pictures/h/
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -226,12 +234,12 @@ bindsym $mod+r mode "resize"
 #
     font pango:JetBrainsMono Nerd Font Mono,Font Awesome 10
     # client.<class> <border> <background> <text> [<indicator> [<child_border>]]
-    client.focused #d5c4a1 #fbf1c7 #3c3836 #d79921 #665c54
-    client.unfocused #d5c4a1 #fbf1c7 #3c3836 #d79921 #d5c4a1
-    client.focused_inactive #d5c4a1 #fbf1c7 #3c3836 #d79921 #d5c4a1
+    client.focused #d5c4a1 #fbf1c7 #3c3836 #d5c4a1 #076678
+    client.unfocused #d5c4a1 #fbf1c7 #3c3836 #d5c4a1 #d5c4a1
+    client.focused_inactive #d5c4a1 #fbf1c7 #3c3836 #d5c4a1 #d5c4a1
 
     #default_border normal 3
-    default_border pixel 3
+    default_border pixel 4
 
     # gaps outer 5
     # gaps inner 10
