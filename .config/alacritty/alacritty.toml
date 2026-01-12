@@ -20,9 +20,11 @@ family = "JetBrainsMono Nerd Font Mono"
 x = 10
 y = 5
 
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
 [window]
 opacity = 0.95
-decorations = "None"
 decorations_theme_variant = "Light"
 
 [general]
