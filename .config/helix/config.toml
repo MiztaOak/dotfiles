@@ -4,6 +4,14 @@ theme = "gruvbox_light"
 true-color = true
 line-number = "relative"
 cursorline = true
+auto-format = false
+clipboard-provider = "win32-yank"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
 
 [editor.indent-guides]
 character = "|"
@@ -16,3 +24,12 @@ select = "underline"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
+
+[keys.normal]
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+
+[keys.normal."space"]
+"space" = "file_picker"
