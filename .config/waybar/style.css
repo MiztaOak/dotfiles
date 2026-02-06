@@ -27,6 +27,10 @@ window#waybar.hidden {
 #workspaces{
 }
 
+#tags {
+  
+}
+
 #cpu{
 }
 
@@ -76,6 +80,55 @@ window#waybar.hidden {
   color: @alert;
 }
 
+#tags button {
+  font-size: 14px;
+  padding: 5px 5px;
+  border-radius:0;
+  outline:none;
+  border:none;
+  color: @fg;
+  background-color: @waybar;
+  /* border-bottom: 5px solid @workspaces-bg; */
+  /* margin-right: 3px; */
+}
+
+#tags button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  color:@workspaces-hover; 
+  background: @workspaces-bg;
+}
+
+
+#tags button.visible {
+  color: @workspaces-active;
+  background-color: @workspaces-full;
+}
+
+#tags button.occupied {
+  background-color: @bg2;
+  /* color: @workspaces-active; */
+  /* border-bottom: 5px solid @workspaces-empty; */
+}
+
+#tags button.focused {
+  text-decoration: underline @workspaces-active;
+  color: @workspaces-active;
+  background-color: @workspaces-full;
+  /* border-left: 3px solid @workspaces-full; */
+  /* border-right: 3px solid @workspaces-full; */
+  /* border-bottom: 5px solid @aqua1; */
+}
+
+#tags button.empty.focused {
+  background-color: @workspaces-full;
+  color: @workspaces-active;
+  /* border-bottom: 5px solid @workspaces-active */
+}
+
+#tags button.urgent {
+  color: @alert;
+}
 /* Center Modules */
 
 .modules-center{

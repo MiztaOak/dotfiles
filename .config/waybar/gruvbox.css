@@ -70,7 +70,7 @@
 
 /*	COLOR BINDS
 	-----------			*/
-@define-color waybar            @bg2;
+@define-color waybar            @bg0;
 @define-color text-main         @fg;
 @define-color text-opposite     @bg;
 @define-color text-alert        @red2;
@@ -80,7 +80,7 @@
 @define-color workspaces        @yellow1;
 @define-color workspaces-hover  @yellow2;
 @define-color workspaces-active @bg;
-@define-color workspaces-full   @fg3;
+@define-color workspaces-full   @blue2;
 @define-color workspaces-bg     @bg3;
 @define-color workspaces-empty  @bg1;
 @define-color day               @orange1;

@@ -7,6 +7,7 @@
   "spacing": 16,
   // Choose the order of the modules
   "modules-left": [
+    "dwl/tags",
     "sway/workspaces",
     "tray"
   ],
@@ -30,6 +31,10 @@
     "format": "⏻ ",
     "rotate": 0,
     "on-click": "wlogout"
+  },
+  "dwl/tags": {
+    "num-tags": 9,
+    "hide-vacant": true
   },
   "sway/workspaces": {
     "all-outputs": false,

@@ -1,5 +1,5 @@
 [terminal]
-shell = "fish"
+shell = "zsh"
 
 [font]
 size = 12.0
@@ -25,6 +25,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 opacity = 0.95
+decorations = "Full"
 decorations_theme_variant = "Light"
 
 [general]
