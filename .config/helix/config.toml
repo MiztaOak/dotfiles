@@ -5,7 +5,7 @@ true-color = true
 line-number = "relative"
 cursorline = true
 auto-format = false
-clipboard-provider = "win32-yank"
+clipboard-provider = "x-clip"
 
 [editor.lsp]
 display-inlay-hints = true
