@@ -12,7 +12,7 @@ set $right l
 # Your preferred terminal emulator
 set $term st -e zsh
 # Your preferred application launcher
-set $menu ~/dotfiles/scripts/dmenu.sh
+set $menu pkill rofi || rofi -show drun -theme "gruvbox-light" -font "JetBrainsMono Nerd Font 15"
 
 set $browser qutebrowser
 
