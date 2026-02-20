@@ -46,11 +46,24 @@ local colors = {
 local tags = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 
 -- Font for the status bar (use "fc-list" to see available fonts)
-local bar_font = "JetBrainsMono Nerd Font:style=Bold:size=12"
+local bar_font = "JetBrainsMono Nerd Font:style=Bold:size=10"
 
 -- Define your blocks
 -- Similar to widgets in qtile, or dwmblocks
 local blocks = {
+    oxwm.bar.block.shell({
+        format = "{}",
+        command = "$HOME/dotfiles/scripts/vpn_module.sh",
+        interval = 1,
+        color = colors.blue,
+        underline = false
+    }),
+    oxwm.bar.block.static({
+        text = " │  ",
+        interval = 999999999,
+        color = colors.grey,
+        underline = false,
+    }),
     oxwm.bar.block.ram({
         format = "Ram: {used}/{total} GB",
         interval = 5,
@@ -184,7 +197,7 @@ oxwm.bar.set_scheme_urgent(colors.red, colors.bg, colors.red)
 
 oxwm.key.bind({ modkey }, "Return", oxwm.spawn_terminal())
 -- Launch Dmenu
-oxwm.key.bind({ modkey }, "D", oxwm.spawn({ "sh", "-c", "~/dotfiles/scripts/dmenu.sh" }))
+oxwm.key.bind({ modkey }, "D", oxwm.spawn({ "sh", "-c", "~/dotfiles/scripts/rofi.sh" }))
 -- Copy screenshot to clipboard
 oxwm.key.bind({ modkey }, "S", oxwm.spawn({ "sh", "-c", "maim -s | xclip -selection clipboard -t image/png" }))
 oxwm.key.bind({ modkey }, "Q", oxwm.client.kill()) 
