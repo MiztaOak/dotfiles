@@ -27,108 +27,53 @@ window#waybar.hidden {
 #workspaces{
 }
 
-#tags {
-  
-}
-
-#cpu{
-}
-
-#workspaces button {
-  font-size: 14px;
-  padding: 5px 5px;
-  color: @fg0;
+#workspaces button, #tags button {
+  font-size: 12px;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  min-width: 22px;
+  color: @blue2;
   border-radius:0;
   outline:none;
   border:none;
   background-color: @workspaces-bg;
-  /* border-bottom: 5px solid @workspaces-bg; */
-  /* margin-right: 3px; */
 }
 
-#workspaces button:hover {
+#workspaces button:hover, #tags button:hover {
   box-shadow: none;
   text-shadow: none;
-  color:@workspaces-hover; 
-  background: @workspaces-bg;
 }
 
-#workspaces button.focused {
-  color: @workspaces-active;
-  background-color: @workspaces-full;
-  /* border-bottom: 5px solid @workspaces-active */
-}
-
-#workspaces button.visible {
-  color: @workspaces-active;
-  background-color: @workspaces-full;
-}
-
-#workspaces button.empty {
+#workspaces button.empty, #tags button.empty {
   background-color: @workspaces-empty;
   color: @fg;
-  /* border-bottom: 5px solid @workspaces-empty; */
+}
+
+#workspaces button.visible, #tags button.occupied {
+  color: @blue2;
+  background-color: @bg3;
+}
+
+#workspaces button.focused, #tags button.focused {
+  color: @workspaces-active;
+  background-color: @workspaces-full;
 }
 
 #workspaces button.empty.focused {
   background-color: @workspaces-full;
   color: @workspaces-active;
-  /* border-bottom: 5px solid @workspaces-active */
 }
 
-#workspaces button.urgent {
-  color: @alert;
-}
-
-#tags button {
-  font-size: 14px;
-  padding: 5px 5px;
-  border-radius:0;
-  outline:none;
-  border:none;
-  color: @fg;
-  background-color: @waybar;
-  /* border-bottom: 5px solid @workspaces-bg; */
-  /* margin-right: 3px; */
-}
-
-#tags button:hover {
-  box-shadow: none;
-  text-shadow: none;
-  color:@workspaces-hover; 
-  background: @workspaces-bg;
-}
-
-
-#tags button.visible {
+#workspaces button.urgent, #tags button.urgent {
+  background-color: @alert;
   color: @workspaces-active;
-  background-color: @workspaces-full;
 }
 
-#tags button.occupied {
-  background-color: @bg2;
-  /* color: @workspaces-active; */
-  /* border-bottom: 5px solid @workspaces-empty; */
+#window {
+  padding-left: 6px;
+  color: @blue2;
 }
 
-#tags button.focused {
-  text-decoration: underline @workspaces-active;
-  color: @workspaces-active;
-  background-color: @workspaces-full;
-  /* border-left: 3px solid @workspaces-full; */
-  /* border-right: 3px solid @workspaces-full; */
-  /* border-bottom: 5px solid @aqua1; */
-}
-
-#tags button.empty.focused {
-  background-color: @workspaces-full;
-  color: @workspaces-active;
-  /* border-bottom: 5px solid @workspaces-active */
-}
-
-#tags button.urgent {
-  color: @alert;
-}
 /* Center Modules */
 
 .modules-center{
@@ -143,12 +88,44 @@ window#waybar.hidden {
 
 /* Right modules */
 .modules-right{
+  /* background-color: @bg2; */
   color: @text-main;
   padding-right:10px;
 }
 
-#network{
-  padding-right: 5px;
+#tray {
+  padding-right: 6px;
+  background-color: @waybar;
+}
+
+#mpd {
+  padding-left: 6px;
+  padding-right: 6px;
+  /* background-color: @bg2; */
+  /* border-right: 1px solid @blue2; */
+  /* border-left: 1px solid @blue2; */
+  color: @blue2;
+}
+
+#clock {
+  color: @blue2;
+  padding-left: 6px;
+}
+
+#language, #custom-vpn, #memory, #wireplumber, #battery, #network{
+  padding-right: 6px;
+  padding-left: 6px;
+  /* border-right: 1px solid @blue2; */
+  color: @blue2;
+}
+
+#custom-separator {
+  color: @blue2;
+  font-size: 14px;
+}
+
+#language {
+  /* border-left: 1px solid @blue2; */
 }
 
 #wireplumber.muted {

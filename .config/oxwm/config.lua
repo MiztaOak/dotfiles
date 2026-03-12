@@ -59,7 +59,7 @@ local blocks = {
         underline = false
     }),
     oxwm.bar.block.static({
-        text = " │  ",
+        text = "│",
         interval = 999999999,
         color = colors.grey,
         underline = false,
@@ -71,7 +71,7 @@ local blocks = {
         underline = false,
     }),
     oxwm.bar.block.static({
-        text = " │  ",
+        text = "│",
         interval = 999999999,
         color = colors.grey,
         underline = false,
@@ -87,7 +87,7 @@ local blocks = {
         underline = false,
     }),
     oxwm.bar.block.static({
-        text = " │  ",
+        text = "│",
         interval = 999999999,
         color = colors.grey,
         underline = false,
