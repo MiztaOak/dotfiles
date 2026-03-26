@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-  font-size: 12px;
+  font-size: 14px;
   background-color: @waybar;
   transition-property: all;
   transition-duration: .5s;
@@ -28,7 +28,7 @@ window#waybar.hidden {
 }
 
 #workspaces button, #tags button {
-  font-size: 12px;
+  font-size: 14px;
   padding: 0px 0px;
   margin: 0px 0px;
   min-width: 22px;
